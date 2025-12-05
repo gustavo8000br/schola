@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1763608817815,
+      "tag": "0000_married_legion",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1763608853045,
+      "tag": "0001_slow_shocker",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1763727910930,
+      "tag": "0002_flippant_jazinda",
+      "breakpoints": true
+    }
+  ]
+}
