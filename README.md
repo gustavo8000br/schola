@@ -97,32 +97,26 @@ O servidor estará disponível em `http://localhost:3000`.
 Crie um arquivo `.env.local` na raiz do projeto com as seguintes variáveis:
 
 ```env
-# Banco de Dados
-DATABASE_URL=mysql://usuario:senha@localhost:3306/schola
+# ============================
+# DATABASE (PostgreSQL - Neon)
+# ============================
+DATABASE_URL="postgresql://usuario:senha@host:porta/nomedb?sslmode=require"
 
-# Autenticacao OAuth
-VITE_APP_ID=seu_app_id
-OAUTH_SERVER_URL=https://api.manus.im
-VITE_OAUTH_PORTAL_URL=https://portal.manus.im
-JWT_SECRET=sua_chave_secreta_jwt
+# ============================
+# NEON AUTH / STACK AUTH
+# ============================
+NEXT_PUBLIC_STACK_PROJECT_ID="SEU_PROJECT_ID"
+NEXT_PUBLIC_STACK_PUBLISHABLE_CLIENT_KEY="SUA_CHAVE_PUBLICA"
+STACK_SECRET_SERVER_KEY="SUA_CHAVE_PRIVADA"
 
-# Informacoes do Proprietario
-OWNER_NAME=Seu Nome
-OWNER_OPEN_ID=seu_open_id
+# URL do front para o callback
+NEXT_PUBLIC_APP_URL="http://localhost:3000"
 
-# APIs Internas
-BUILT_IN_FORGE_API_URL=https://forge.manus.im
-BUILT_IN_FORGE_API_KEY=sua_chave_api
-VITE_FRONTEND_FORGE_API_URL=https://forge.manus.im
-VITE_FRONTEND_FORGE_API_KEY=sua_chave_api_frontend
-
-# Branding
-VITE_APP_TITLE=Schola
-VITE_APP_LOGO=/logo.svg
-
-# Analytics (Opcional)
-VITE_ANALYTICS_ENDPOINT=https://analytics.manus.im
-VITE_ANALYTICS_WEBSITE_ID=seu_website_id
+# ============================
+# APP INFO
+# ============================
+VITE_APP_TITLE="Schola"
+VITE_APP_LOGO="/logo.svg"
 ```
 
 ### Scripts Disponíveis
