@@ -55,7 +55,7 @@ A plataforma será expandida de forma incremental, adicionando novos módulos co
 | **ORM** | Drizzle ORM | Acesso a dados com type-safety e migrations automáticas |
 | **Estilização** | Tailwind CSS 4 | Framework utilitário para design responsivo |
 | **Componentes** | shadcn/ui | Biblioteca de componentes acessíveis e customizáveis |
-| **Autenticação** | Manus OAuth | Sistema de autenticação seguro e integrado |
+| **Autenticação** | Stack Auth (Neon Auth) | Autenticação moderna e segura para Next.js |
 | **Testes** | Vitest | Framework de testes rápido e moderno |
 | **Build** | Vite | Ferramenta de build ultra-rápida |
 
@@ -65,7 +65,8 @@ A plataforma será expandida de forma incremental, adicionando novos módulos co
 
 - **Node.js** 18+ e **pnpm** 8+
 - **Git**
-- Acesso a um banco de dados MySQL/TiDB (ou use o fornecido pelo Manus)
+- Conta no [Stack Auth](https://app.stack-auth.com) (autenticação)
+- Banco de dados PostgreSQL (Neon recomendado)
 
 ### Instalação Local
 
@@ -224,6 +225,8 @@ pnpm test:coverage
 
 Para mais informações sobre o desenvolvimento, consulte:
 
+- [Stack Auth Setup](./docs/STACK_AUTH_SETUP.md) - Guia de configuração do Stack Auth
+- [RBAC e 2FA](./docs/RBAC_AND_2FA.md) - Sistema de controle de acesso e autenticação de dois fatores
 - [Guia de Desenvolvimento](./docs/DEVELOPMENT.md) _(em breve)_
 - [Arquitetura do Projeto](./docs/ARCHITECTURE.md) _(em breve)_
 - [API Documentation](./docs/API.md) _(em breve)_

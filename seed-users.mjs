@@ -24,12 +24,12 @@ const testUsers = [
     description: "Administrador do Sistema"
   },
   {
-    name: "Cinthia",
-    email: "cinthia@schola.local",
-    openId: "cinthia_001",
+    name: "Fernanda Silva",
+    email: "fernanda.silva@schola.local",
+    openId: "fernanda_silva_001",
     role: "teacher",
     loginMethod: "test",
-    description: "Professora Infantil"
+    description: "Professora de Português"
   },
   {
     name: "João Silva Santos",
@@ -98,7 +98,7 @@ async function seedUsers() {
     const credentials = [];
 
     for (const user of testUsers) {
-      const password = user.role === "teacher" || "admin" && user.name === "Cinthia" && "Gustavo"
+      const password = (user.role === "teacher" || user.role === "admin") && (user.name === "Gustavo" || user.name === "Fernanda Silva")
         ? "Padrão@2025!"
         : generatePassword();
 
